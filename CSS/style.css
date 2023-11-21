@@ -1,0 +1,220 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height:59px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#logo{
+    margin: 11px 34px;
+}
+#logo img{
+    height: 56px;
+    margin: 11px 9px;
+}
+/* Navigation bar list item */
+
+#navbar ul{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home section */
+#home{
+    display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height:400px;
+   justify-content: center;
+   align-items: center;
+}
+#home::before{
+    content: "";
+    background-color: rgb(19, 234, 194);
+    /* background: url(../Img/Digital\ M.jpg)no-repeat center center/cover; */
+    position: absolute;
+    height:  520px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+    opacity: 0.89;
+}
+#home h1{
+    font-family: 'Kanit', sans-serif;
+    color:red;
+    text-align: center;
+    font-weight: bolder;
+}
+#home p{
+    font-family:sans-serif;
+    padding: 20px 10px;
+    margin: 0px 299px;
+    color: rgb(38, 47, 196);;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* Services section */
+
+#Services{
+    display: flex;
+    margin: 34px;
+}
+#Services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: rgb(228, 220, 209);
+}
+#Services .box img{
+    height: 170px;
+display: block;
+margin: auto;
+}
+
+
+/* Clients section */
+#client-section{
+    position: relative;
+    height: 344px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background:url(../Img/D\ marketing.jpg)no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+}
+
+.client-item{
+    padding: 37px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 144px;
+
+}
+
+/* Contact Section */
+#contact{
+    /* height: 100000%; */
+    background-color: aqua;
+    /* position: relative; */
+    margin-top: 10vh;
+    margin-right: 10vh;
+    width: 100%;
+   
+    
+}
+
+
+#contact::before{
+    
+    display: flex;
+    /* content: ""; */
+    align-content: center;
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* z-index: -1; */
+    /* opacity: 0.7; */
+    /* background: url(../Img/Contact.jpg)no-repeat center center/cover; */
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{}
+#contact-box textarea{
+    width: 35rem;
+    padding: 1.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 13%;;
+    height: 900px;
+}
+#contact-box label{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    color: white;
+    border-radius: 14px;
+    border: 2px solid rgb(219, 216, 216);
+    background-color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
